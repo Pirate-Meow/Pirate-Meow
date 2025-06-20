@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Catálogo de Streaming</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #e50914;
+    }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .item {
+      background-color: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #000;
+      transition: transform 0.3s;
+    }
+    .item:hover {
+      transform: scale(1.05);
+    }
+    .item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .item-title {
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meu Catálogo de Streaming</h1>
+
+  <div class="catalogo">
+    <a class="item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+      <img src="https://via.placeholder.com/300x450?text=Filme+1" alt="Filme 1">
+      <div class="item-title">Filme 1</div>
+    </a>
+
+    <a class="item" href="https://www.youtube.com/watch?v=ysz5S6PUM-U" target="_blank">
+      <img src="https://via.placeholder.com/300x450?text=Filme+2" alt="Filme 2">
+      <div class="item-title">Filme 2</div>
+    </a>
+
+    <a class="item" href="https://drive.google.com/file/d/SEU_ID_DO_VIDEO/view" target="_blank">
+      <img src="https://via.placeholder.com/300x450?text=Filme+3" alt="Filme 3">
+      <div class="item-title">Filme 3</div>
+    </a>
+  </div>
+</body>
+</html>
 
